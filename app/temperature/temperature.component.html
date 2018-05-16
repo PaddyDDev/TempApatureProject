@@ -1,0 +1,74 @@
+<!--<!DOCTYPE html>
+<html>
+
+<head>
+  <title id='Description'>Angular Gauge GaugeWithSlider</title>
+  <meta name="description" content="This is an example of how to dynamiclly update Angular Gauge's values." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  &lt;!&ndash; Styles &ndash;&gt;
+  <link rel="stylesheet" href="../jqwidgets/styles/jqx.base.css" type="text/css" />
+
+  &lt;!&ndash; jQWidgets &ndash;&gt;
+  <script type="text/javascript" src="../scripts/demos.js"></script>
+
+  &lt;!&ndash; Angular &ndash;&gt;
+  <script src="../node_modules/core-js/client/shim.min.js"></script>
+  <script src="../node_modules/zone.js/dist/zone.min.js"></script>
+  <script src="../node_modules/zone.js/dist/long-stack-trace-zone.min.js"></script>
+
+</head>
+
+&lt;!&ndash; Display the application &ndash;&gt;
+<body>
+
+<div class="example-description">
+  In this sample is illustrated how to dynamically update the Angular Gauge's value.
+</div>
+
+<app-root>Loading...</app-root>        <script src="../aot/gauge_gaugewithslider.bundle.js"></script>
+</body>
+
+</html>-->
+<div class="row">
+  <div class="col-sm-9">
+<!--
+    <app-room-detail *ngIf="selectedRoom" [room]="selectedRoom"></app-room-detail>
+-->
+  </div>
+  <div class="col-sm-3">
+    <!--
+        <room-list [rooms]="rooms"></room-list>
+    -->
+<!--
+    <app-room-list (SelectRoom)="onSelectRoom($event)" [rooms]="rooms"></app-room-list>
+-->
+
+  </div>
+</div>
+<div class="row mt-5">
+<!--
+  <div class="col-md-4 mb-3" *ngFor="let room of rooms">
+-->
+  <div class="col-md-4 mb-3">
+    <div class="card-body">
+      <div class="card-title">{{rooms}}</div>
+    </div>
+
+  </div>
+</div>
+<!--<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let temperature of temperatures">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">{{temperature.name}}</h5>
+        <p class="card-text">{{temperature.description}}</p>
+        <a href="#" class="btn btn-primary">Buy Tickets</a>
+      </div>
+      <div class="card-footer text-muted">
+        {{temperature.date | date:'shortDate'}}
+      </div>
+    </div>
+  </div>
+</div>-->

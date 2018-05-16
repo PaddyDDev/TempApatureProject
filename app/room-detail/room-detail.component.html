@@ -1,0 +1,33 @@
+<!--
+<div class="col-md-9 mx-auto"> &lt;!&ndash;float right???&ndash;&gt;
+-->
+<h3>{{ date | date: 'full'}}</h3>
+<h2>{{errorMessage}}</h2>
+<h3>Room Selected: {{roomID}}</h3>
+
+<!--<p>
+  {{room.roomName}}
+</p>-->
+<!--
+FINISH WITH THE FORM SECTIONFROM COMPUTER - EDIT ROOM NAME???
+
+-->
+<!--<div>
+  <h3 *ngIf="!editTitle" (click)="onTitleClick()">{{room.roomName}}</h3>
+<div *ngIf="editTitle" class="form-group">
+  <input type="input" class="form-control" name="title" required placeholder="title" [(ngModel)]="room.roomName">
+</div>>-->
+<p>
+  <button class="btn btn-secondary" (click)="showTemperatures()">Get Current Temperature</button>
+  <button class="btn btn-secondary" (click)="showHistoricalTemperatures()">Get Historical Temperature</button>
+</p>
+<router-outlet></router-outlet>
+
+<!--
+<button class="btn btn-primary" (click)="onRoomRequest()">Get Rooms Temperature</button>
+-->
+<!--<button class="btn btn-primary" (click)="onClick($event)">button test</button>
+{{greeting}}-->
+<!--
+</div>
+-->

@@ -1,0 +1,42 @@
+<h2>{{greetUser()}}</h2>
+<!--
+NOTE the template is not aware of the global JS variables
+but can be done in the class and then bind it to the template
+
+Pass parameter into the onClick() handle bu using the $ dollar sign onClick($event).
+Now that a parameter event is being passed in the onClick event, must also be in the
+method **onClick(event) {
+    console.log(event);**
+
+    The $ essentially allows access to all the properties of on the DOM event
+This gives all the information about the DOM event
+-->
+<!--<h3>{{ date | date: 'full'}}</h3>-->
+<div class="row">
+  <!--<div class="col-sm-8">
+    &lt;!&ndash;
+        <app-room-detail *ngIf="selectedRoom" [room]="selectedRoom"></app-room-detail>
+    &ndash;&gt;
+   &lt;!&ndash; <app-room-detail></app-room-detail>
+  </div>&ndash;&gt;
+  <div>-->
+  <div class="col-sm-8 align-content-center">
+    <app-room-list></app-room-list>
+    <!--<h2>Room List</h2>
+
+      <ul *ngFor="let room of rooms">
+        <li>{{room}}</li>
+      </ul>-->
+    <!--
+        <app-room-list (SelectRoom)="onSelectRoom($event)" [rooms]="rooms"></app-room-list>
+    -->
+  </div>
+</div>
+<div>
+  <button class="btn btn-primary" (click)="addSensor()">Add Sensor</button>
+</div>
+<!--</div>-->
+<!--<button class="btn btn-primary">Add Sensor</button>
+<button class="btn btn-primary" (click)="onTemperatureRequest()">Get Sensor Temperature</button>
+<button class="btn btn-primary" (click)="onRoomRequest()">Get Rooms Temperature</button>
+<button class="btn btn-primary" (click)="onClick($event)">button test</button>{{greeting}}-->
