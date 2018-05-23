@@ -1,2 +1,40 @@
-<h1>His works</h1>
+<h1>History works</h1>
+<!--
+<div class="dropdown">
+  <h3>{{errorMessage}}</h3>
+  &lt;!&ndash;<ul class="nav nav-pills nav-stacked">&ndash;&gt;
+  &lt;!&ndash;
+    <li (click)="onSelect(room)" *ngFor="let room of rooms"><a>{{room.roomName}}</a></li>
+  &ndash;&gt;
+  <div class="btn-group-vertical">
+    <ul class="nav nav-pills nav-stacked" *ngFor="let temperatureReading of temperatureReadings">
+      &lt;!&ndash;button type="button" class="btn btn-outline-info">
+        {{ room.roomName }} Current Temperature {{room.currentTemperature}}
+      </button>&ndash;&gt;
+      <li (click)="onSelect(temperatureReading)" class="btn btn-outline-info">
+        {{ temperatureReading.temperature }}
+      </li>
+    </ul>
+  </div>
+</div>
+-->
+<!--<div *ngIf="chart">
+  <canvas id="canvas">{{ chart }}</canvas>
+</div>-->
+<!--<div #chart>
+  &lt;!&ndash; Chart will appear here &ndash;&gt;
+</div>-->
+<!--<div>
+  <button (click)="populateGraph()" type="button" class="btn btn-primary" >Populate Graph</button>
 
+</div>-->
+<!--
+<div id="chartContainer" style="height: 370px; width: 100%; margin-left:auto;margin-right:auto;"></div>
+-->
+<!--<ul *ngFor="let temperatureReading of temperatureReadings">
+  <li>{{temperatureReading.temperature}}</li>
+</ul>-->
+
+<div *ngIf="chart">
+  <canvas id="canvas">{{ chart }}</canvas>
+</div>
