@@ -14,10 +14,12 @@ import { HomeComponent } from './home/home.component';
 import {AuthService} from './auth.service';
 import {AuthGuard} from './auth.guard';
 import { AmChartsModule } from '@amcharts/amcharts3-angular';
-  /*
-   import { AuthService } from 'ngx-auth';
-    import {TemperatureService} from "./temperature.service";
-  */
+import {ChartsModule} from 'ng2-charts';
+import {JsonpModule} from '@angular/http';
+/*
+ import { AuthService } from 'ngx-auth';
+  import {TemperatureService} from "./temperature.service";
+*/
 import {GaugesModule} from 'ng-canvas-gauges/lib';
 import {AlertModule} from 'ngx-alerts';
 import { RoomListComponent } from './room-list/room-list.component';
@@ -52,6 +54,7 @@ import { TemperatureDataHistoricalComponent } from './temperature-data-historica
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ChartsModule,
     FormsModule,
     HttpClientModule,
     AmChartsModule,
